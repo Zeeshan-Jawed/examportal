@@ -1,18 +1,22 @@
 <mat-nav-list>
     <mat-list-item>
-      <mat-icon mat-list-icon>person</mat-icon>
-      <h4 mat-line *ngIf="isExpanded">Management A</h4>
+      <mat-icon mat-list-icon title="Dashboard">dashboard</mat-icon>
+      <h4 mat-line *ngIf="isExpanded">Dashboard</h4>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <span class="nav-list-title">Test</span>
+    <mat-list-item>
+      <mat-icon mat-list-icon title="Exam">assignment</mat-icon>
+      <h4 mat-line *ngIf="isExpanded">Exam</h4>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <span class="nav-list-title">Manage</span>
+    <mat-list-item>
+      <mat-icon mat-list-icon title="Student">people</mat-icon>
+      <h4 mat-line *ngIf="isExpanded">Student</h4>
     </mat-list-item>
     <mat-list-item>
-      <mat-icon mat-list-icon>assignment</mat-icon>
-      <h4 mat-line *ngIf="isExpanded">Management B</h4>
-    </mat-list-item>
-    <mat-list-item>
-      <mat-icon mat-list-icon>domain</mat-icon>
-      <h4 mat-line *ngIf="isExpanded">Management C</h4>
-    </mat-list-item>
-    <mat-list-item>
-      <mat-icon mat-list-icon>folder_shared</mat-icon>
-      <h4 mat-line *ngIf="isExpanded">Management X</h4>
+      <mat-icon mat-list-icon title="Teacher">supervised_user_circle</mat-icon>
+      <h4 mat-line *ngIf="isExpanded">Teacher</h4>
     </mat-list-item>
   </mat-nav-list>

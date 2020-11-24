@@ -1,0 +1,11 @@
+
+  h1.example-app-name {
+    margin-left: 5px;
+  }
+  .mat-toolbar{
+    background-color: white !important;
+  }
+  .mat-sidenav-content{
+      margin: 200px;
+  }
+  

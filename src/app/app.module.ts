@@ -23,6 +23,7 @@ import { DashboardComponent } from './admin/components/dashboard/dashboard.compo
 import { HeaderComponent } from './admin/shared/header/header.component';
 import { FooterComponent } from './admin/shared/footer/footer.component';
 import { SidebarComponent } from './admin/shared/sidebar/sidebar.component';
+
 @NgModule({
   declarations: [
     AppComponent,
