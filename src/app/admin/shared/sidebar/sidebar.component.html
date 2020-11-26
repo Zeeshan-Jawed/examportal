@@ -1,22 +1,26 @@
-<mat-nav-list>
-    <mat-list-item>
+<mat-nav-list >
+    <mat-list-item routerLink="/admin/">
       <mat-icon mat-list-icon title="Dashboard">dashboard</mat-icon>
       <h4 mat-line *ngIf="isExpanded">Dashboard</h4>
     </mat-list-item>
     <mat-divider></mat-divider>
     <span class="nav-list-title">Test</span>
-    <mat-list-item>
+    <mat-list-item routerLink="/admin/exam">
       <mat-icon mat-list-icon title="Exam">assignment</mat-icon>
       <h4 mat-line *ngIf="isExpanded">Exam</h4>
     </mat-list-item>
     <mat-divider></mat-divider>
-    <span class="nav-list-title">Manage</span>
+    <span class="nav-list-title">Organize</span>
     <mat-list-item>
-      <mat-icon mat-list-icon title="Student">people</mat-icon>
-      <h4 mat-line *ngIf="isExpanded">Student</h4>
+      <mat-icon mat-list-icon title="Courses">chrome_reader_mode</mat-icon>
+      <h4 mat-line *ngIf="isExpanded">Courses</h4>
+    </mat-list-item>
+    <mat-list-item routerLink="/admin/students">
+      <mat-icon mat-list-icon title="Students">people</mat-icon>
+      <h4 mat-line *ngIf="isExpanded">Students</h4>
     </mat-list-item>
     <mat-list-item>
-      <mat-icon mat-list-icon title="Teacher">supervised_user_circle</mat-icon>
-      <h4 mat-line *ngIf="isExpanded">Teacher</h4>
+      <mat-icon mat-list-icon title="Teachers">supervised_user_circle</mat-icon>
+      <h4 mat-line *ngIf="isExpanded">Teachers</h4>
     </mat-list-item>
   </mat-nav-list>

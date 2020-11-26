@@ -19,10 +19,17 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
+import {MatSortModule} from '@angular/material/sort';
+import {MatPaginatorModule} from '@angular/material/paginator';
 import { DashboardComponent } from './admin/components/dashboard/dashboard.component';
 import { HeaderComponent } from './admin/shared/header/header.component';
 import { FooterComponent } from './admin/shared/footer/footer.component';
 import { SidebarComponent } from './admin/shared/sidebar/sidebar.component';
+import { ExamComponent } from './admin/components/exam/exam.component';
+import { StudentsComponent } from './admin/components/students/students.component';
+import { MaterialUiModule } from './material-ui/material-ui.module';
+
 
 @NgModule({
   declarations: [
@@ -32,24 +39,17 @@ import { SidebarComponent } from './admin/shared/sidebar/sidebar.component';
     DashboardComponent,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    ExamComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDatepickerModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatNativeDateModule,
-    MatButtonModule,
-    MatToolbarModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatIconModule,
-    MatCardModule,
-    MatSidenavModule,
-    MatListModule
+    MaterialUiModule
+   
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
