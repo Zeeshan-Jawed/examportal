@@ -7,10 +7,10 @@
     display: flex;
     justify-content: space-between;
   }
-  .mat-sidenav-content{
+  /* .mat-sidenav-content{
       padding: 15px;
       margin: 0 30px;
-  }
+  } */
   
   
   ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
