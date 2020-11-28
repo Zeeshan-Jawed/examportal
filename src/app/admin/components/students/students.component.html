@@ -1,12 +1,14 @@
 
 <mat-card>
-  <mat-card-title>
-    Students
-  </mat-card-title>
-  <mat-form-field>
-    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
-  </mat-form-field>
-
+  <div>
+    <mat-card-title>
+      Students
+    </mat-card-title>
+    <mat-form-field>
+      <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+    </mat-form-field>
+  </div>
+  <button mat-flat-button color="primary" routerLink="/admin/students/new">Add New</button>
 </mat-card>
 <div class="mat-elevation-z8">
   <table mat-table [dataSource]="dataSource" matSort>

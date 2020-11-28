@@ -11,7 +11,7 @@
     </mat-list-item>
     <mat-divider></mat-divider>
     <span class="nav-list-title">Organize</span>
-    <mat-list-item>
+    <mat-list-item routerLink="/admin/courses">
       <mat-icon mat-list-icon title="Courses">chrome_reader_mode</mat-icon>
       <h4 mat-line *ngIf="isExpanded">Courses</h4>
     </mat-list-item>
@@ -19,7 +19,7 @@
       <mat-icon mat-list-icon title="Students">people</mat-icon>
       <h4 mat-line *ngIf="isExpanded">Students</h4>
     </mat-list-item>
-    <mat-list-item>
+    <mat-list-item routerLink="/admin/teachers">
       <mat-icon mat-list-icon title="Teachers">supervised_user_circle</mat-icon>
       <h4 mat-line *ngIf="isExpanded">Teachers</h4>
     </mat-list-item>
