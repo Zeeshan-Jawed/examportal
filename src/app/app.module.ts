@@ -33,6 +33,7 @@ import { CoursesComponent } from './admin/components/courses/courses.component';
 import { StudentFormComponent } from './admin/components/students/student-form/student-form.component';
 import { TeacherFormComponent } from './admin/components/teachers/teacher-form/teacher-form.component';
 import { TeachersComponent } from './admin/components/teachers/teachers.component';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import { TeachersComponent } from './admin/components/teachers/teachers.componen
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialUiModule
+    MaterialUiModule,
+    ChartsModule
    
     
   ],
