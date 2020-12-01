@@ -17,7 +17,8 @@ export class DashboardComponent implements OnInit {
 
   public barChartData: ChartDataSets[] = [
     { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
+    { data: [28, 48, 40, 19, 86, 27, 70], label: 'Series B' },
+    { data: [18, 78, 20, 69, 56, 17, 100], label: 'Series C' }
   ];
   constructor() { }
 
