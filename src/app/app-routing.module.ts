@@ -13,7 +13,7 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { SigninComponent } from './core/components/signin/signin.component';
 
 const routes: Routes = [
-  { path: "", component: FooterComponent},
+  { path: "", component: SigninComponent},
   { path: "signin", component: SigninComponent },
   { path:"admin",component:DashboardComponent},
   { path:"admin/exam",component:ExamComponent},

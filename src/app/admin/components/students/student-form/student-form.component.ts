@@ -7,7 +7,7 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./student-form.component.css']
 })
 export class StudentFormComponent implements OnInit {
-
+  hide=true;
   constructor() { }
 
   ngOnInit(): void {
@@ -18,7 +18,6 @@ export class StudentFormComponent implements OnInit {
     if (this.email.hasError('required')) {
       return 'You must enter a value';
     }
-
     return this.email.hasError('email') ? 'Not a valid email' : '';
   }
 }

@@ -9,19 +9,6 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { SigninComponent } from './core/components/signin/signin.component';
 
 
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import { MatNativeDateModule } from '@angular/material/core';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
-import {MatTableModule} from '@angular/material/table';
-import {MatSortModule} from '@angular/material/sort';
-import {MatPaginatorModule} from '@angular/material/paginator';
 import { DashboardComponent } from './admin/components/dashboard/dashboard.component';
 import { HeaderComponent } from './admin/shared/header/header.component';
 import { FooterComponent } from './admin/shared/footer/footer.component';
@@ -55,6 +42,8 @@ import { ChartsModule } from 'ng2-charts';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialUiModule,
     ChartsModule
