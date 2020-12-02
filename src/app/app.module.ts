@@ -21,6 +21,7 @@ import { StudentFormComponent } from './admin/components/students/student-form/s
 import { TeacherFormComponent } from './admin/components/teachers/teacher-form/teacher-form.component';
 import { TeachersComponent } from './admin/components/teachers/teachers.component';
 import { ChartsModule } from 'ng2-charts';
+import {NgxPrintModule} from 'ngx-print';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { ChartsModule } from 'ng2-charts';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     MaterialUiModule,
-    ChartsModule
+    ChartsModule,
+    NgxPrintModule
    
     
   ],

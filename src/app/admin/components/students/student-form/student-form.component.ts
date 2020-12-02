@@ -8,6 +8,7 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class StudentFormComponent implements OnInit {
   hide=true;
+  name=null
   constructor() { }
 
   ngOnInit(): void {

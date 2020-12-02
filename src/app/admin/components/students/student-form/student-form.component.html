@@ -10,7 +10,8 @@
     <div class="col-md-8">
         <mat-form-field appearance="fill">
           <mat-label>Enter your email</mat-label>
-          <input matInput placeholder="pat@example.com" [formControl]="email" >
+          <input matInput placeholder="pat@example.com" [formControl]="email"
+           >
           <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
           
         </mat-form-field>
@@ -22,8 +23,8 @@
           </button>
         </mat-form-field>
         <mat-form-field appearance="fill">
-          <mat-label for="title">Name</mat-label>
-          <input matInput required >
+          <mat-label>Name</mat-label>
+          <input matInput required [(ngModel)]="name">
         </mat-form-field>
         <mat-form-field appearance="fill">
           <mat-label>Father Name</mat-label>
@@ -42,7 +43,7 @@
           <input matInput>
         </mat-form-field>
         <mat-form-field appearance="fill">
-          <mat-label>Select</mat-label>
+          <mat-label>Select Shift</mat-label>
           <mat-select>
             <mat-option value="option">Morning</mat-option>
             <mat-option value="option">Evening</mat-option>
@@ -71,11 +72,32 @@
         </mat-form-field>
         <div class="btn-grp">
           <button mat-flat-button color="accent">Clear</button>
-        <button mat-flat-button color="warn">Submit</button>
+          <button mat-flat-button color="warn">Submit</button>
         </div>
     </div>
       <div class="col-md-4">
-        hello
+        
+        <div id="print-section"> 
+          <!--Your html stuff that you want to print-->
+          <mat-card *ngIf="name">
+            <h2>DCS UBIT</h2>
+            <img src="https://www.flaticon.com/svg/static/icons/svg/21/21104.svg" width="100px" alt="">
+            <h4>Name: {{name}}</h4>
+            <h4>Father Name:</h4>
+            <h4>Seat No.:</h4>
+            <h4>Shift:</h4>
+            <h4>Field:</h4>
+            <h4>Section:</h4>
+
+          </mat-card>
+          
+        </div>
+         
+         <!--
+           2)- Add the directive name in your button (ngxPrint),
+           3)- Affect your ID to printSectionId
+         -->
+        <button *ngIf="name" printSectionId="print-section" class="btn btn-warning" ngxPrint>Print</button> 
       </div>
     </div>
 </div>
