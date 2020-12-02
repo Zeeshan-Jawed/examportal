@@ -1,8 +1,9 @@
 .mat-list-item{
     font-size: 15px;
+    color: rgb(255 255 255 / 87%);
 }
 .nav-list-title{
-    color: hsl(217, 8%, 59%);
+    color: rgb(255 255 255 / 67%);
     margin:23px ;
     font-weight: 500;
     font-size: 13px;

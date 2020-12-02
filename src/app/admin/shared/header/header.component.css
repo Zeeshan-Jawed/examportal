@@ -3,10 +3,17 @@
     margin-left: 5px;
   }
   .mat-toolbar{
-    background-color: white !important;
+    /* background-color: white !important; */
     display: flex;
     justify-content: space-between;
   }
+  .mat-drawer {
+    background-color: #3f51b5;
+}
+.mat-list-base .mat-list-item {
+  color: rgb(255 255 255 / 87%);
+}
+
   /* .mat-sidenav-content{
       padding: 15px;
       margin: 0 30px;

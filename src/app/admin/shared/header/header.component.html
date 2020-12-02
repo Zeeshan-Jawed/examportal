@@ -1,4 +1,4 @@
-<mat-toolbar  class="example-toolbar">
+<mat-toolbar  class="example-toolbar" color="primary">
     <div>
       <button mat-icon-button (click)="isExpanded = !isExpanded"><mat-icon>menu</mat-icon></button>
     <span class="example-app-name">My Application</span>
@@ -21,7 +21,7 @@
   </mat-toolbar>
   
   <mat-sidenav-container class="mat-typography" autosize >
-    <mat-sidenav #drawer mode="side" disableClose="true" opened="true">
+    <mat-sidenav #drawer mode="side" disableClose="true" opened="true" color="primary">
         <app-sidebar [isExpanded]="isExpanded"></app-sidebar>
     </mat-sidenav>
 
