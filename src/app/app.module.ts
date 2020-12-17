@@ -22,6 +22,7 @@ import { TeacherFormComponent } from './admin/components/teachers/teacher-form/t
 import { TeachersComponent } from './admin/components/teachers/teachers.component';
 import { ChartsModule } from 'ng2-charts';
 import {NgxPrintModule} from 'ngx-print';
+import { ExamFormComponent } from './admin/components/exam/exam-form/exam-form.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import {NgxPrintModule} from 'ngx-print';
     CoursesComponent,
     StudentFormComponent,
     TeacherFormComponent,
-    TeachersComponent
+    TeachersComponent,
+    ExamFormComponent
   ],
   imports: [
     BrowserModule,

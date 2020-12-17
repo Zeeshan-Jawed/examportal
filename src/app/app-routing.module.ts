@@ -2,6 +2,7 @@ import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CoursesComponent } from './admin/components/courses/courses.component';
 import { DashboardComponent } from './admin/components/dashboard/dashboard.component';
+import { ExamFormComponent } from './admin/components/exam/exam-form/exam-form.component';
 import { ExamComponent } from './admin/components/exam/exam.component';
 import { StudentFormComponent } from './admin/components/students/student-form/student-form.component';
 import { StudentsComponent } from './admin/components/students/students.component';
@@ -16,6 +17,9 @@ const routes: Routes = [
   { path: "", component: SigninComponent},
   { path: "signin", component: SigninComponent },
   { path:"admin",component:DashboardComponent},
+
+  { path:"admin/exam/new",component:ExamFormComponent},
+  { path:"admin/exam/:id",component:ExamFormComponent},
   { path:"admin/exam",component:ExamComponent},
 
   { path: "admin/students/new", component: StudentFormComponent},
